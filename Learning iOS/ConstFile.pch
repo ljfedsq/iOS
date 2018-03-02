@@ -1,0 +1,28 @@
+//
+//  ConstFile.pch
+//  Learning iOS
+//
+//  Created by MinBaby on 2018/1/31.
+//  Copyright © 2018年 MinBaby. All rights reserved.
+//
+
+#ifndef ConstFile_pch
+#define ConstFile_pch
+
+#define SCREEN_WIDTH       [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT      [UIScreen mainScreen].bounds.size.height
+#define PICKER_HEIGHT     300
+#define PICKER_WIDTH      300
+#define CUSTOMERTYPE  @"CUSTOMERTYPE"
+#define IPTYPE      @"IPtype"
+
+/* iOS设备 */
+#define kDevice_Is_iPhone4s ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kDevice_Is_iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kDevice_Is_iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) : NO)
+#define kDevice_Is_iPhone6Plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size) : NO)
+#define iPhone6PlusBigMode ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2001), [[UIScreen mainScreen]currentMode].size) : NO)
+//适配参数
+#define KsuitParam (kDevice_Is_iPhone6Plus ?1.12:(kDevice_Is_iPhone6?1.0:(iPhone6PlusBigMode ?1.01:0.85))) //以6为基准图
+
+#endif /* ConstFile_pch */

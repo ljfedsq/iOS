@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController">
+            <connections>
+                <outlet property="loginBtn" destination="q1d-a3-Cl3" id="jYG-oq-xd4"/>
+                <outlet property="passwordTextField" destination="F3D-cJ-oE8" id="k7d-Ny-QSu"/>
+                <outlet property="registerBtn" destination="HUL-Rt-R7s" id="IHX-TW-duX"/>
+                <outlet property="userNameTextField" destination="Zp6-Jh-SG2" id="lRz-ur-3h3"/>
+                <outlet property="userPhoto" destination="n0c-rL-NJz" id="obC-0y-voB"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" userLabel="LoginView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zp6-Jh-SG2">
+                    <rect key="frame" x="40" y="230" width="240" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="QSn-a5-vEG"/>
+                        <constraint firstAttribute="height" constant="40" id="T8q-xK-9oz"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F3D-cJ-oE8">
+                    <rect key="frame" x="40" y="300" width="240" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="bRK-lc-f93"/>
+                        <constraint firstAttribute="width" constant="240" id="hhV-Tv-dPM"/>
+                    </constraints>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q1d-a3-Cl3">
+                    <rect key="frame" x="40" y="390" width="240" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="240" id="83S-zL-iNu"/>
+                        <constraint firstAttribute="height" constant="40" id="GEx-PV-7g2"/>
+                    </constraints>
+                    <state key="normal" title="登录">
+                        <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.074155336412081052" green="0.6227814634797445" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="action:" destination="-1" eventType="touchUpInside" id="c4s-ks-qf1"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="n0c-rL-NJz">
+                    <rect key="frame" x="120" y="120" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="NyX-8o-0BO"/>
+                        <constraint firstAttribute="width" constant="80" id="oNt-8i-uh7"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HUL-Rt-R7s">
+                    <rect key="frame" x="40" y="460" width="240" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="5OB-2D-tZK"/>
+                        <constraint firstAttribute="width" constant="240" id="BPe-d7-rjB"/>
+                    </constraints>
+                    <state key="normal" title="注册">
+                        <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="goToRegister:" destination="-1" eventType="touchUpInside" id="sq3-Mn-yC7"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="n0c-rL-NJz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="5K5-Tf-Dvj"/>
+                <constraint firstItem="Zp6-Jh-SG2" firstAttribute="top" secondItem="n0c-rL-NJz" secondAttribute="bottom" constant="30" id="60j-te-lN2"/>
+                <constraint firstItem="Zp6-Jh-SG2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="BQt-nK-pmt"/>
+                <constraint firstItem="F3D-cJ-oE8" firstAttribute="top" secondItem="Zp6-Jh-SG2" secondAttribute="bottom" constant="30" id="IIA-rJ-K1m"/>
+                <constraint firstItem="HUL-Rt-R7s" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XHf-k7-qe3"/>
+                <constraint firstItem="F3D-cJ-oE8" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="exK-JR-MBd"/>
+                <constraint firstItem="q1d-a3-Cl3" firstAttribute="top" secondItem="F3D-cJ-oE8" secondAttribute="bottom" constant="50" id="o1J-YM-pRC"/>
+                <constraint firstItem="q1d-a3-Cl3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="pNx-Ym-44Y"/>
+                <constraint firstItem="n0c-rL-NJz" firstAttribute="top" secondItem="Q5M-cg-NOt" secondAttribute="top" constant="100" id="uIH-pn-iCk"/>
+                <constraint firstItem="HUL-Rt-R7s" firstAttribute="top" secondItem="q1d-a3-Cl3" secondAttribute="bottom" constant="30" id="zy1-xw-IFi"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
+            <point key="canvasLocation" x="-331" y="-215"/>
+        </view>
+    </objects>
+</document>
